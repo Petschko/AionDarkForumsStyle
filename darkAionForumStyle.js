@@ -149,6 +149,16 @@
 		'input[type="url"]:hover,' +
 		'input[type="password"]:hover,' +
 		'select[multiple]:hover,' +
+		'input[type="text"][readonly],' +
+		'input[type="search"][readonly],' +
+		'input[type="email"][readonly],' +
+		'input[type="number"][readonly],' +
+		'input[type="date"][readonly],' +
+		'input[type="datetime"][readonly],' +
+		'input[type="url"][readonly],' +
+		'input[type="password"][readonly],' +
+		'textarea[readonly],' +
+		'select[multiple][readonly],' +
 		'#main > div > div > .sidebar > span > .collapsibleButton {' +
 			'background-color: ' + contentBackgroundColor2Fallback + ' !important;' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColor2 + ' !important;' : '') +
