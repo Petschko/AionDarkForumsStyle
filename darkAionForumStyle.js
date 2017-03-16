@@ -70,7 +70,9 @@
 		'.containerList > li:nth-child(2n),' +
 		'.wbbBoardList .wbbBoardNode2,' +
 		'.table > tbody > tr:nth-child(2n) > td,' +
-		'li:nth-child(2n+1) .message .messageContent {' +
+		'li:nth-child(2n+1) .message .messageContent,' +
+		'.redactor-box > .redactorAutosaveNotice,' +
+		'.dropdownMenu {' +
 			'background-color: ' + contentBackgroundColor2Fallback + ';' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColor2 + ';' : '') +
 		'}' +
@@ -91,10 +93,23 @@
 		'.table,' +
 		'article.message,' +
 		'.pollContainer > .formSubmit,' +
-		'.messageFooterNote {' +
+		'.messageFooterNote,' +
+		'.messageTabMenu > nav.messageTabMenuNavigation > ul,' +
+		'.messageTabMenu > div,' +
+		'.messageTabMenu > fieldset {' +
 			'background-color: transparent;' +
 		'}' +
-		'article.message {' +
+		'article.message,' +
+		'textarea,' +
+		'input[type="text"],' +
+		'input[type="search"],' +
+		'input[type="date"],' +
+		'input[type="datetime"],' +
+		'input[type="email"],' +
+		'input[type="number"],' +
+		'input[type="url"],' +
+		'input[type="password"],' +
+		'select[multiple] {' +
 			'background-image: none !important;' +
 		'}' +
 		'article aside.messageSidebar {' +
@@ -115,6 +130,36 @@
 			'background-color: #000;' + /* Fallback */
 			'background-color: transparent;' +
 		'}' +
+		'.redactor-dropdown-box-fontcolor > li.redactorColorPallet:hover,' +
+		'.dialogContent,' +
+		'.dialogContent .formSubmit,' +
+		'textarea,' +
+		'textarea:hover,' +
+		'input[type="text"]:hover,' +
+		'input[type="search"]:hover,' +
+		'input[type="date"]:hover,' +
+		'input[type="datetime"]:hover,' +
+		'input[type="email"]:hover,' +
+		'input[type="number"]:hover,' +
+		'input[type="url"]:hover,' +
+		'input[type="password"]:hover,' +
+		'select[multiple]:hover,' +
+		'#main > div > div > .sidebar > span > .collapsibleButton {' +
+			'background-color: ' + contentBackgroundColor2Fallback + ' !important;' + /* Fallback */
+			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColor2 + ' !important;' : '') +
+		'}' +
+		'.messageTabMenu > nav.messageTabMenuNavigation > ul > li > a,' +
+		'.tabMenu > ul > li > a {' +
+			'background-color: #D9D9D9;' +
+			'color: #000;' +
+		'}' +
+		'.messageTabMenu > nav.messageTabMenuNavigation > ul > li.active > a,' +
+		'.messageTabMenu > nav.messageTabMenuNavigation > ul > li:hover > a,' +
+		'.tabMenu > ul > li > a:hover,' +
+		'.tabMenu > ul > li.ui-state-active > a {' +
+			'background-color: #000;' +
+			'color: ' + contentColor + ';' +
+		'}' +
 		// Handle Main Text-Colors here
 		'.messageBody > .messageSignature,' +
 		'dl.dataList dt,' +
@@ -127,10 +172,22 @@
 		'dl.statsDataList > dt,' +
 		'.wbbSimilarThreadList .box48 > div > p:not(:first-child),' +
 		'.sidebar .sidebarBoxHeadline > h3,' +
-		'dl:not(.plain) > dt {' +
+		'dl:not(.plain) > dt,' +
+		'dl:not(.plain) > dd > small:not(.innerError) {' +
 			'color: ' + lessImportantContentColor + ';' +
 		'}' +
+		'textarea,' +
+		'input[type="text"],' +
+		'input[type="search"],' +
+		'input[type="date"],' +
+		'input[type="datetime"],' +
+		'input[type="email"],' +
+		'input[type="number"],' +
+		'input[type="url"],' +
+		'input[type="password"],' +
+		'select[multiple],' +
 		'.icon,' +
+		'.fa,' +
 		'.boxHeadline > h1,' +
 		'.boxHeadline > h1 a,' +
 		'.boxSubHeadline > h2,' +
@@ -142,7 +199,9 @@
 		'.sidebar fieldset > legend,' +
 		'dl.statsDataList > dd,' +
 		'.popover > .popoverContent,' +
-		'.messageBody {' +
+		'.messageBody,' +
+		'.dropdownMenu li > a,' +
+		'dl:not(.plain) > dd > label {' +
 			'color: ' + contentColor + ';' +
 		'}' +
 		// Handle Link-Colors here
@@ -185,7 +244,9 @@
 		'}' +
 		'.mainMenu > ul,' +
 		'.breadcrumbs > ul > li,' +
-		'.customStyleInfo {' +
+		'.customStyleInfo,' +
+		'.messageTabMenu > div > nav,' +
+		'.dialogTitlebar {' +
 			'background-color: ' + navBarBackgroundColorFallback + ' !important;' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + navBarBackgroundColor + ' !important;' : '') +
 		'}' +
@@ -210,6 +271,12 @@
 		'.badge.badgeUpdate {' +
 			'background-color: ' + darkerSpecialBackgroundColor + ';' +
 			'color: ' + specialColor + ';' +
+		'}' +
+		'.tag::before {' +
+			'border-right-color: ' + specialBackgroundColor + ';' +
+		'}' +
+		'.tag::after {' +
+			'background-color: #000;' +
 		'}' +
 		'li:nth-child(2n+1) .message.messageSidebarOrientationLeft .messageHeader::after,' +
 		'.message.messageSidebarOrientationLeft .messageHeader::before {' +
@@ -238,19 +305,57 @@
 		'.customStyleInfo > p {' +
 			'padding: 13px 0;' +
 		'}' +
+		'.redactor-editor {' +
+			'background-image: linear-gradient(to bottom, ' + hexToRGB(contentBackgroundColor) + ' 0%, ' + hexToRGB(contentBackgroundColor) + ' 100%);' +
+			'border-color: #000;' +
+			'border-bottom-color: #FFF;' +
+		'}' +
+		'.redactor-box > .redactorAutosaveNotice,' +
+		'.dropdownMenu {' +
+			'border-color: #000;' +
+		'}' +
+		'.redactor-toolbar > li > a:hover:not(.redactor-button-disabled),' +
+		'.redactor-toolbar > li > a.redactor-act,' +
+		'.redactor-toolbar > li > a.dropact {' +
+			'text-shadow: none;' +
+			'background-color: ' + specialBackgroundColor + ';' +
+		'}' +
+		'.redactor-dropdown-box-fontcolor > li.redactorColorPallet > a {' +
+			'border-color: ' + contentBackgroundColor2Fallback + ';' +
+			((useSemiTransparency) ? 'border-color: ' + contentBackgroundColor2 + ';' : '') +
+		'}' +
+		'input[type="text"],' +
+		'input[type="search"],' +
+		'input[type="date"],' +
+		'input[type="datetime"],' +
+		'input[type="email"],' +
+		'input[type="number"],' +
+		'input[type="url"],' +
+		'input[type="password"],' +
+		'select[multiple] {' +
+			'box-shadow: none;' +
+		'}' +
 		// -------- Fixes ----------
-		'a.userLink {' + // Removes lines from username links
+		'a.userLink,' +
+		'a.badge.tag {' + // Removes lines from username links
 			'text-decoration: none;' +
 		'}' +
 		'.customStyleInfo > p a {' +
 			'text-decoration: underline !important;' +
+		'}' +
+		'.redactor-box, .messageTabMenu {' + // Add missing (visible) border around posting editor
+			'border: 1px solid #000 !important;' +
 		'}' +
 		'.button.active,' +
 		'.button:hover,' +
 		'.button:hover > a,' +
 		'.pollContainer button:hover,' +
 		'.commentList button:hover,' +
-		'.recentActivitiesMore.showMore > button:hover {' + // Fix for hover site-page (where are you with your mouse)
+		'.recentActivitiesMore.showMore > button:hover,' +
+		'input[type="reset"]:hover:not([disabled]),' +
+		'input[type="submit"]:hover:not([disabled]),' +
+		'input[type="button"]:hover:not([disabled]),' +
+		'button:hover:not([disabled]) {' + // Fix for hover site-page (where are you with your mouse)
 			'background-image: linear-gradient(to bottom, ' + hexToRGB(specialBackgroundColor) + ' 0%, rgb(0, 0, 0) 100%);' +
 			'border-color: ' + contentColor + ';' +
 			'color: ' + specialColor + ' !important;' +
