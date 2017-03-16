@@ -63,7 +63,9 @@
 		'.wbbBoardList .wbbBoardNode1,' +
 		'#main > div > div > .sidebar,' +
 		'.table td,' +
-		'.message .messageContent {' +
+		'.message .messageContent,' +
+		'.interactiveDropdown,' +
+		'.interactiveDropdown > .interactiveDropdownItemsContainer > .interactiveDropdownItems > li {' +
 			'background-color: ' + contentBackgroundColorFallback + ';' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColor + ';' : '') +
 		'}' +
@@ -87,7 +89,8 @@
 		'.message .messageContent:hover,' +
 		'.commentList > li:hover:not(.commentAdd),' +
 		'.commentList > li:hover:nth-child(2n):not(.commentAdd),' +
-		'.likeList > li:first-child:hover {' +
+		'.likeList > li:first-child:hover,' +
+		'.interactiveDropdown > .interactiveDropdownItemsContainer > .interactiveDropdownItems > li:hover:not(.loading):not(.noItems) {' +
 			'background-color: ' + contentBackgroundColorFallbackHover + ';' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColorHover + ';' : '') +
 		'}' +
@@ -188,6 +191,9 @@
 		'input[type="url"],' +
 		'input[type="password"],' +
 		'select[multiple],' +
+		'.interactiveDropdown,' +
+		'.interactiveDropdown .icon,' +
+		'.dropdownMenu,' +
 		'.icon,' +
 		'.fa,' +
 		'.boxHeadline > h1,' +
@@ -244,7 +250,8 @@
 		'.message .newMessageBadge::before {' +
 			'border-bottom-color: ' + darkerSpecialBackgroundColor + ';' +
 		'}' +
-		'.wbbBoardList .icon {' +
+		'.wbbBoardList .icon,' +
+		'.messageGroupList tr.new .columnAvatar > div::after {' +
 			'color: ' + contentIconsColor + ';' +
 		'}' +
 		'.mainMenu > ul,' +
@@ -346,6 +353,9 @@
 		'select[multiple],' +
 		'textarea {' +
 			'box-shadow: none;' +
+		'}' +
+		'.error {' +
+			'background-color: ' + specialBackgroundColor + ';' +
 		'}' +
 		// -------- Fixes ----------
 		'a.userLink,' +
