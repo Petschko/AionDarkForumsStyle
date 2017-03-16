@@ -100,7 +100,8 @@
 		'.messageFooterNote,' +
 		'.messageTabMenu > nav.messageTabMenuNavigation > ul,' +
 		'.messageTabMenu > div,' +
-		'.messageTabMenu > fieldset {' +
+		'.messageTabMenu > fieldset,' +
+		'.message.messageDisabled:not(.messageReduced) {' +
 			'background-color: transparent;' +
 		'}' +
 		'article.message,' +
