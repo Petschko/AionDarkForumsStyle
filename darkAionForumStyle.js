@@ -213,8 +213,12 @@
 		'.dropdownMenu li > span {' +
 			'color: ' + contentColor + ';' +
 		'}' +
-		'ul.dropdownMenu.dropdownOpen > li.dropdownNavigationItem p {' +
-			'color: #000 !important;' + // fixme: marked drop down item in black
+		'ul.dropdownMenu.dropdownOpen > li:hover,' +
+		'ul.dropdownMenu.dropdownOpen > li.dropdownNavigationItem span,' +
+		'ul.dropdownMenu.dropdownOpen > li:hover span,' +
+		'ul.dropdownMenu.dropdownOpen > li.dropdownNavigationItem div' +
+		'ul.dropdownMenu.dropdownOpen > li:hover div {' +
+			'color: #000 !important;' +
 		'}' +
 		// Handle Link-Colors here
 		'a,' +
