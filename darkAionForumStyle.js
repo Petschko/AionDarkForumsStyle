@@ -227,7 +227,8 @@
 		'ul.dropdownMenu.dropdownOpen > li.dropdownNavigationItem span,' +
 		'ul.dropdownMenu.dropdownOpen > li:hover span,' +
 		'ul.dropdownMenu.dropdownOpen > li.dropdownNavigationItem div' +
-		'ul.dropdownMenu.dropdownOpen > li:hover div {' +
+		'ul.dropdownMenu.dropdownOpen > li:hover div,' +
+		'.highlight {' +
 			'color: #000 !important;' +
 		'}' +
 		// Handle Link-Colors here
