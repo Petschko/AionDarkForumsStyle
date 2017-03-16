@@ -127,6 +127,7 @@
 			'background-color: ' + quoteBackgroundColor + ';' +
 		'}' +
 		'.framed > img,' +
+		'.framed > .icon,' +
 		'.breadcrumbs {' +
 			'background-color: #000;' + /* Fallback */
 			'background-color: transparent;' +
@@ -202,14 +203,17 @@
 		'.popover > .popoverContent,' +
 		'.messageBody,' +
 		'.dropdownMenu li > a,' +
-		'dl:not(.plain) > dd > label {' +
+		'dl:not(.plain) > dd > label,' +
+		'.dropdownMenu li > span {' +
 			'color: ' + contentColor + ';' +
 		'}' +
 		// Handle Link-Colors here
-		'a {' +
+		'a,' +
+		'.sidebar fieldset > nav ul > li > a {' +
 			'color: ' + contentLinkColor + ';' +
 		'}' +
-		'a:hover {' +
+		'a:hover,' +
+		'.sidebar fieldset > nav ul > li:hover:not(.active) > a {' +
 			'color: ' + contentLinkColorHover + ';' +
 		'}' +
 		'.navigation > ul.navigationItems > li > a,' +
@@ -302,6 +306,12 @@
 		'.customStyleInfo {' +
 			'color: ' + contentColor + ';' +
 			'border-radius: 50px;' +
+		'}' +
+		'.sidebar fieldset > nav ul > li.active,' +
+		'.sidebar fieldset > nav ul > li.active > a {' +
+			'background-color: ' + specialBackgroundColor + ';' +
+			'color: ' + specialColor + ' !important;' +
+			'text-decoration: none;' +
 		'}' +
 		'.customStyleInfo > p {' +
 			'padding: 13px 0;' +
