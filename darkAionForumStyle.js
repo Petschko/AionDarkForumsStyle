@@ -86,6 +86,7 @@
 		'li:nth-child(2n+1) .message .messageContent:hover,' +
 		'.message .messageContent:hover,' +
 		'.commentList > li:hover:not(.commentAdd),' +
+		'.commentList > li:hover:nth-child(2n):not(.commentAdd),' +
 		'.likeList > li:first-child:hover {' +
 			'background-color: ' + contentBackgroundColorFallbackHover + ';' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColorHover + ';' : '') +
@@ -332,7 +333,8 @@
 		'input[type="number"],' +
 		'input[type="url"],' +
 		'input[type="password"],' +
-		'select[multiple] {' +
+		'select[multiple],' +
+		'textarea {' +
 			'box-shadow: none;' +
 		'}' +
 		// -------- Fixes ----------
