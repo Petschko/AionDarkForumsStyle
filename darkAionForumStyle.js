@@ -117,7 +117,8 @@
 		'select[multiple] {' +
 			'background-image: none !important;' +
 		'}' +
-		'article aside.messageSidebar {' +
+		'article aside.messageSidebar,' +
+		'.inlineCode {' +
 			'background-color: #141414;' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: #0009;' : '') +
 		'}' +
@@ -348,7 +349,8 @@
 			'border-bottom-color: #FFF;' +
 		'}' +
 		'.redactor-box > .redactorAutosaveNotice,' +
-		'.dropdownMenu {' +
+		'.dropdownMenu,' +
+		'.inlineCode {' +
 			'border-color: #000;' +
 		'}' +
 		'.redactor-toolbar > li > a:hover:not(.redactor-button-disabled),' +
