@@ -213,6 +213,9 @@
 		'.dropdownMenu li > span {' +
 			'color: ' + contentColor + ';' +
 		'}' +
+		'ul.dropdownMenu.dropdownOpen > li.dropdownNavigationItem p {' +
+			'color: #000 !important;' + // fixme: marked drop down item in black
+		'}' +
 		// Handle Link-Colors here
 		'a,' +
 		'.sidebar fieldset > nav ul > li > a {' +
