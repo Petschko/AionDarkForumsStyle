@@ -177,6 +177,9 @@
 			'background-color: #000;' +
 			'color: ' + contentColor + ';' +
 		'}' +
+		'.messageGroupList tr.messageDisabled > td {' +
+			'background-color: ' + specialBackgroundColor + ' !important;' +
+		'}' +
 		// Handle Main Text-Colors here
 		'.messageBody > .messageSignature,' +
 		'dl.dataList dt,' +
@@ -233,6 +236,9 @@
 		'.highlight {' +
 			'color: #000 !important;' +
 		'}' +
+		'.messageGroupList tr.messageDisabled {' +
+			'color: ' + specialColor + ';' +
+		'}' +
 		// Handle Link-Colors here
 		'a,' +
 		'.sidebar fieldset > nav ul > li > a {' +
@@ -265,6 +271,9 @@
 		'}' +
 		'.customStyleInfo > p a {' +
 			'color: ' + specialColor + ' !important;' +
+		'}' +
+		'.messageGroupList tr.messageDisabled a:not(.badge) {' +
+			'color: ' + specialColor + ';' +
 		'}' +
 		// Handle Misc BG & Colors here
 		'.message .newMessageBadge::before {' +
