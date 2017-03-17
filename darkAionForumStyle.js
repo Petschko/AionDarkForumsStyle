@@ -180,6 +180,11 @@
 		'.messageGroupList tr.messageDisabled > td {' +
 			'background-color: ' + specialBackgroundColor + ' !important;' +
 		'}' +
+		'.interactiveDropdown > .interactiveDropdownItemsContainer > .interactiveDropdownItems > li.interactiveDropdownItemOutstanding:not(.loading):not(.noItems) {' +
+			'background-image: none;' +
+			'background-color: ' + darkerSpecialBackgroundColor + ';' +
+			'color: ' + specialColor + ';' +
+		'}' +
 		// Handle Main Text-Colors here
 		'.messageBody > .messageSignature,' +
 		'dl.dataList dt,' +
