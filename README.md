@@ -38,7 +38,8 @@ Details unten bei [Kontakt](#contact--kontakt))
 
 #### Google-Chrome (DE)
 
-I'm sorry I didn't have Google-Chrome, but you can tell me how to and I will add it here =)
+Ich habe leider kein Google-Chrome installiert, wenn du weißt wie es unter Chrome funktioniert,
+kannst du mir gerne bescheid sagen wie und ich füge es hier ein =)
 
 ### How to Install - English / (Englisch)
 
