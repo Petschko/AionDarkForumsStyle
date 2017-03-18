@@ -468,13 +468,12 @@
 	 * Adds Style-Info to the Footer (Link to Github uvm)
 	 */
 	function addStyleBy() {
+		// check if can find footer element else exit this function
 		var footer = document.getElementById('pageFooter');
-
 		if(footer === undefined || footer === null)
 			return;
 
 		var footerContent = footer.getElementsByClassName('footerContent')[0];
-
 		if(footerContent === undefined || footerContent === null)
 			return;
 
@@ -486,6 +485,7 @@
 			' by Peter Dragicevic <a href="mailto:peter-91@hotmail.de">[E-Mail]</a>' +
 			' aka <a href="https://board.de.aion.gameforge.com/index.php/User/39379-Petschko/" data-user-id="39379"' +
 			' class="userLink">Petschko</a></p>';
+
 		// Add it =)
 		footerContent.insertBefore(styleInfo, footerContent.firstChild);
 	}
@@ -535,7 +535,7 @@
 		currentPos += chars;
 
 		// check if alpha is there and get it if
-		if((hex.length - startPos) === 8)
+		if((hex.length - startPos) === 8 || (hex.length - startPos) === 4)
 			alpha = hexToInt(hex.substr(currentPos, chars));
 
 		// Output the result
