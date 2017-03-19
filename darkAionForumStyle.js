@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark AION-GF-Forums-Style
 // @namespace    http://petschko.org/
-// @version      0.1
+// @version      0.1.1
 // @description  Changes the White-Gameforge AION-Style to a darker Style
 // @author       Peter Dragicevic [peter-91@hotmail.de]
 // @match        https://board.de.aion.gameforge.com/*
@@ -101,7 +101,21 @@
 		'.messageTabMenu > nav.messageTabMenuNavigation > ul,' +
 		'.messageTabMenu > div,' +
 		'.messageTabMenu > fieldset,' +
-		'.message.messageDisabled:not(.messageReduced) {' +
+		'.message.messageDisabled:not(.messageReduced),' +
+		'.formSuccess input[type="text"],' +
+		'.formSuccess input[type="search"],' +
+		'.formSuccess input[type="email"],' +
+		'.formSuccess input[type="number"],' +
+		'.formSuccess input[type="url"],' +
+		'.formSuccess input[type="password"],' +
+		'.formSuccess textarea,' +
+		'.formError input[type="text"],' +
+		'.formError input[type="search"],' +
+		'.formError input[type="email"],' +
+		'.formError input[type="number"],' +
+		'.formError input[type="url"],' +
+		'.formError input[type="password"],' +
+		'.formError textarea {' +
 			'background-color: transparent;' +
 		'}' +
 		'article.message,' +
