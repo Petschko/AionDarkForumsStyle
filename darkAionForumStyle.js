@@ -199,6 +199,9 @@
 			'background-color: ' + darkerSpecialBackgroundColor + ';' +
 			'color: ' + specialColor + ';' +
 		'}' +
+		'.codeBox > div {' +
+			'box-shadow: inset 4em 0 0 ' + darkerSpecialBackgroundColor + ', inset 4.1em 0 0 ' + specialColor + ';' +
+		'}' +
 		// Handle Main Text-Colors here
 		'.messageBody > .messageSignature,' +
 		'dl.dataList dt,' +
