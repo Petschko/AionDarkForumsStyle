@@ -202,6 +202,9 @@
 		'.codeBox > div {' +
 			'box-shadow: inset 4em 0 0 ' + darkerSpecialBackgroundColor + ', inset 4.1em 0 0 ' + specialColor + ';' +
 		'}' +
+		'.codeBox > div > ol > li:target {' +
+			'background-color: #0b3700' +
+		'}' +
 		// Handle Main Text-Colors here
 		'.messageBody > .messageSignature,' +
 		'dl.dataList dt,' +
