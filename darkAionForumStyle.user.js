@@ -3,7 +3,7 @@
 // @namespace    http://petschko.org/
 // @description  Changes the White-Gameforge AION-Style to a darker Style
 // @author       Peter Dragicevic [peter-91@hotmail.de]
-// @version      1.0.0
+// @version      1.0.1
 // @encoding     utf-8
 // @icon         https://raw.githubusercontent.com/Petschko/AionDarkForumsStyle/master/petschko_icon128x128.png
 // @licence      http://www.apache.org/licenses/LICENSE-2.0
@@ -82,7 +82,8 @@
 		'.table > tbody > tr:nth-child(2n) > td,' +
 		'li:nth-child(2n+1) .message .messageContent,' +
 		'.redactor-box > .redactorAutosaveNotice,' +
-		'.dropdownMenu {' +
+		'.dropdownMenu,' +
+		'.commentList > li:nth-child(2n) .commentResponseList .commentResponse:nth-child(2n+1) {' +
 			'background-color: ' + contentBackgroundColor2Fallback + ';' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColor2 + ';' : '') +
 		'}' +
@@ -183,7 +184,8 @@
 		'input[type="password"][readonly],' +
 		'textarea[readonly],' +
 		'select[multiple][readonly],' +
-		'#main > div > div > .sidebar > span > .collapsibleButton {' +
+		'#main > div > div > .sidebar > span > .collapsibleButton,' +
+		'.commentResponseList > li:hover {' +
 			'background-color: ' + contentBackgroundColor2Fallback + ' !important;' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColor2 + ' !important;' : '') +
 		'}' +
@@ -212,9 +214,6 @@
 		'}' +
 		'.codeBox > div > ol > li:target {' +
 			'background-color: #0b3700;' +
-		'}' +
-		'.commentList > li:nth-child(2n) .commentResponseList .commentResponse:nth-child(2n+1) {' +
-			'background-color: ' + darkerSpecialBackgroundColor + ';' +
 		'}' +
 		// Handle Main Text-Colors here
 		'.messageBody > .messageSignature,' +
