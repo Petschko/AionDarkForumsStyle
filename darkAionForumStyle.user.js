@@ -1,9 +1,17 @@
 // ==UserScript==
 // @name         Dark AION-GF-Forums-Style
 // @namespace    http://petschko.org/
-// @version      0.1.1
 // @description  Changes the White-Gameforge AION-Style to a darker Style
 // @author       Peter Dragicevic [peter-91@hotmail.de]
+// @version      1.0.0
+// @encoding     utf-8
+// @icon         https://raw.githubusercontent.com/Petschko/AionDarkForumsStyle/master/petschko_icon128x128.png
+// @licence      http://www.apache.org/licenses/LICENSE-2.0
+// @homepage     https://github.com/Petschko/AionDarkForumsStyle
+// @supportURL   https://github.com/Petschko/AionDarkForumsStyle/issues
+// @contactURL   https://github.com/Petschko/AionDarkForumsStyle#contact--kontakt
+// @updateURL    https://raw.githubusercontent.com/Petschko/AionDarkForumsStyle/master/darkAionForumStyle.user.js
+// @downloadURL  https://raw.githubusercontent.com/Petschko/AionDarkForumsStyle/master/darkAionForumStyle.user.js
 // @match        https://board.de.aion.gameforge.com/*
 // @match        https://board.en.aion.gameforge.com/*
 // @grant        none
