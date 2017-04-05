@@ -203,7 +203,10 @@
 			'box-shadow: inset 4em 0 0 ' + darkerSpecialBackgroundColor + ', inset 4.1em 0 0 ' + specialColor + ';' +
 		'}' +
 		'.codeBox > div > ol > li:target {' +
-			'background-color: #0b3700' +
+			'background-color: #0b3700;' +
+		'}' +
+		'.commentList > li:nth-child(2n) .commentResponseList .commentResponse:nth-child(2n+1) {' +
+			'background-color: ' + darkerSpecialBackgroundColor + ';' +
 		'}' +
 		// Handle Main Text-Colors here
 		'.messageBody > .messageSignature,' +
