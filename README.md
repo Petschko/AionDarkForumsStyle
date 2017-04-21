@@ -101,6 +101,6 @@ In meiner Pause lese ich gerne mal ein wenig im AION-GF-Forum, mit einem dunkler
 
 ## Contact / Kontakt
 
-- **E-Mail:** peter-91@hotmail.de
+- **E-Mail:** peter@petschko.org
 - **AION-Forum Userlink:** _(DE/GER)_ [Petschko](https://board.de.aion.gameforge.com/index.php/User/39379-Petschko/)
 - **Github Issue-Section:** [LINK](https://github.com/Petschko/AionDarkForumsStyle/issues) - Bug-Reporting
