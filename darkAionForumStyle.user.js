@@ -3,7 +3,7 @@
 // @namespace    http://petschko.org/
 // @description  Changes the White-Gameforge AION-Style to a darker Style
 // @author       Peter Dragicevic [peter@petschko.org]
-// @version      1.0.2
+// @version      1.0.3
 // @encoding     utf-8
 // @icon         https://raw.githubusercontent.com/Petschko/AionDarkForumsStyle/master/petschko_icon128x128.png
 // @licence      http://www.apache.org/licenses/LICENSE-2.0
