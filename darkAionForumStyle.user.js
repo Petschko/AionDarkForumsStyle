@@ -83,7 +83,8 @@
 		'li:nth-child(2n+1) .message .messageContent,' +
 		'.redactor-box > .redactorAutosaveNotice,' +
 		'.dropdownMenu,' +
-		'.commentList > li:nth-child(2n) .commentResponseList .commentResponse:nth-child(2n+1) {' +
+		'.commentList > li:nth-child(2n) .commentResponseList .commentResponse:nth-child(2n+1),' +
+		'.commentList > li:nth-child(2n+1) .commentResponseList .commentResponse:nth-child(2n+1) {' +
 			'background-color: ' + contentBackgroundColor2Fallback + ';' + /* Fallback */
 			((useSemiTransparency) ? 'background-color: ' + contentBackgroundColor2 + ';' : '') +
 		'}' +
@@ -550,7 +551,7 @@
 		var chars = 2;
 
 		var startChar = hex.substr(0, 1);
-		if(startChar == '#')
+		if(startChar === '#')
 			startPos = 1;
 		if((hex.length - startPos) === 3 || (hex.length - startPos) === 4)
 			chars = 1;
