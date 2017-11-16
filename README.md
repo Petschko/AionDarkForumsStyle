@@ -15,7 +15,7 @@ Dieses Benutzer-Script ändert das Standard (helle) Gameforge-AION-WBB4-Style zu
 
 ### Installation - Deutsch / (German)
 
-#### Firefox (DE)
+#### Firefox (DE) (Version 56 oder niedriger)
 
 1. Wenn noch nicht geschehen, installiere [Greasemonkey](https://addons.mozilla.org/de/firefox/addon/greasemonkey/) als AddOn
 2. Installiere dieses Script [(Klick hier zum installieren)](https://raw.githubusercontent.com/Petschko/AionDarkForumsStyle/master/darkAionForumStyle.user.js)
@@ -48,7 +48,7 @@ Probiere es ähnlich wie bei Firefox, nur das du [Tampermonkey](https://chrome.g
 
 ### How to Install - English / (Englisch)
 
-#### Firefox (EN)
+#### Firefox (EN) (Version 56 or lower)
 
 1. If not done already, install [Greasemonkey](https://addons.mozilla.org/de/firefox/addon/greasemonkey/) as AddOn
 2. Install this Script [(Click here to install)](https://raw.githubusercontent.com/Petschko/AionDarkForumsStyle/master/darkAionForumStyle.user.js)
